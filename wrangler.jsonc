@@ -1,9 +1,9 @@
 {
   // Lets Cloudflare's Workers flow deploy this as a static site: `npx wrangler
-  // deploy` uploads everything under public/ (index.html, _headers, robots.txt)
-  // and serves it with the _headers file honoured. The Pages flow ignores this
-  // file and just needs "public" as the output directory.
+  // deploy` uploads this directory minus .assetsignore's list (index.html,
+  // _headers, robots.txt) and honours _headers. The Pages flow ignores this file;
+  // its build output directory is "/".
   "name": "solvern-site",
   "compatibility_date": "2025-09-01",
-  "assets": { "directory": "./public" }
+  "assets": { "directory": "./" }
 }

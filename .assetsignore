@@ -1,0 +1,7 @@
+# Files wrangler must not upload as site assets (the Workers flow uploads the
+# whole directory). Pages ignores this file; it serves what it is told to.
+.git
+.gitignore
+.assetsignore
+README.md
+wrangler.jsonc
