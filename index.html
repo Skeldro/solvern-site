@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solvern</title>
+<meta name="description" content="Solvern is a small software company. We build simple, dependable operations tools for small businesses: shift scheduling, appointment booking, and safety and compliance tracking.">
+<meta property="og:title" content="Solvern">
+<meta property="og:description" content="Solvern is a small software company. We build simple, dependable operations tools for small businesses: shift scheduling, appointment booking, and safety and compliance tracking.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://solvern.dev/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f6b62'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Georgia,serif' font-size='21' fill='%23fbfaf8'%3ES%3C/text%3E%3C/svg%3E">
+<style>
+:root {
+  --bg: #fbfaf8;
+  --ink: #1a1a19;
+  --muted: #5c5b57;
+  --accent: #0f6b62;
+  --rule: #d9d6cf;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16171a;
+    --ink: #eceae5;
+    --muted: #a3a099;
+    --accent: #6fd3c2;
+    --rule: #34363b;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html {
+  -webkit-text-size-adjust: 100%;
+  background: var(--bg);
+}
+
+body {
+  margin: 0 auto;
+  max-width: 46rem;
+  padding: clamp(2.5rem, 9vw, 7rem) clamp(1.25rem, 6vw, 3rem) 3rem;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, "Nimbus Roman", "Liberation Serif", "DejaVu Serif", serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  overflow-wrap: break-word;
+}
+
+@media (min-width: 40em) {
+  body { font-size: 1.125rem; }
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.75rem, 13vw, 4.25rem);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+
+.mark {
+  display: block;
+  width: 2.5rem;
+  height: 2px;
+  margin: 1.75rem 0 0;
+  background: var(--accent);
+}
+
+.lead {
+  margin: 2.75rem 0 0;
+}
+
+main > section {
+  margin-top: clamp(3rem, 8vw, 4.5rem);
+}
+
+h2 {
+  margin: 0 0 1.75rem;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li + li {
+  margin-top: 2.25rem;
+}
+
+li p {
+  margin: 0;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.status {
+  margin-top: 0.4rem;
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+a:focus:not(:focus-visible) {
+  outline: none;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+footer {
+  margin-top: clamp(3.5rem, 10vw, 6rem);
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.9375rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer p + p {
+  margin-top: 0.35rem;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Solvern</h1>
+  <span class="mark" aria-hidden="true"></span>
+</header>
+
+<main>
+  <p class="lead">Solvern is a small software company. We build simple, dependable operations tools for small businesses — the kind of software a caf&eacute; or a workshop can run without an IT department. Our products are made for small businesses worldwide, and the interfaces ship in twelve languages.</p>
+
+  <section aria-labelledby="services">
+    <h2 id="services">What we make</h2>
+    <ul>
+      <li>
+        <!-- PRODUCT NAME: this is the one place the shift-scheduling product is
+             named. When the name is chosen, replace the words inside the <strong>
+             below and change nothing else. -->
+        <p><strong>Shift scheduling</strong> for caf&eacute;s, restaurants, shops and small crews. The manager builds the week. Staff say when they can and can&rsquo;t work, and what they would prefer. The schedule fills itself. Everyone sees their week on the web or on an Android phone.</p>
+        <p class="status">In private pilot. Write to ask for early access.</p>
+      </li>
+      <li>
+        <p><strong>Appointment booking</strong> for service businesses.</p>
+        <p class="status">In the works.</p>
+      </li>
+      <li>
+        <p><strong>Safety and compliance tracking</strong> for garages, workshops, bakeries and small factories: the schedules, checklists, reminders and evidence a safety officer has to keep.</p>
+        <p class="status">In the works.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="contact">
+    <h2 id="contact">Get in touch</h2>
+    <p>Write to <a href="mailto:contact@solvern.dev">contact@solvern.dev</a>.</p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Solvern</p>
+  <p>This site sets no cookies and runs no trackers.</p>
+</footer>
+
+</body>
+</html>

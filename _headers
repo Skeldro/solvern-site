@@ -1,0 +1,10 @@
+# Cloudflare Pages response headers for every path. The page is one HTML file
+# with an inline <style> and an inline SVG favicon, no scripts, no images from
+# anywhere, so the policy can refuse everything else.
+/*
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; img-src data:; base-uri 'none'; form-action 'none'; frame-ancestors 'none'
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+  X-Frame-Options: DENY
